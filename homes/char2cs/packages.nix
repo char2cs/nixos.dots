@@ -46,6 +46,7 @@
 	  fish
 	  spotify-tui
 	  discord
+	  chromium
 	  jetbrains.idea-ultimate
 
       # theming tools
