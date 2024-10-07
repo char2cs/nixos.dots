@@ -174,7 +174,7 @@
   boot.kernelParams = [ "mem_sleep_default=deep" ];
   # suspend-then-hibernate
   systemd.sleep.extraConfig = ''
-    HibernateDelaySec=0m
+    HibernateDelaySec=15m
     SuspendState=mem
   '';
 
@@ -212,5 +212,5 @@
     # '';
   };
 
-  system.stateVersion = "23.11";
+  system.stateVersion = "24.05";
 }

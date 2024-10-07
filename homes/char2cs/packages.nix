@@ -11,7 +11,6 @@
       dolphin
       figma-linux
       kolourpaint
-      github-desktop
       gnome.nautilus
       icon-library
       dconf-editor
@@ -36,27 +35,21 @@
       unzip
       glib
       foot
-      kitty
-	  alacritty
       starship
       showmethekey
       vscode
       ydotool
 	  spotify
-      google-chrome
 	  obs-studio
 	  openssl
 	  openvpn
-	  teamviewer
-	  bun
 	  fish
-	spotify-tui
-	discord
-	#jetbrains.idea-ultimate
+	  spotify-tui
+	  discord
+	  jetbrains.idea-ultimate
 
       # theming tools
       gradience
-      gnome-tweaks
 
       # hyprland
       brightnessctl
@@ -87,13 +80,10 @@
       gcc
       typescript
       eslint
-      # very important stuff
-      # uwuify
 
       # Cybersecurity
       nmap
       arp-scan
-      httpie
     ];
   };
 }

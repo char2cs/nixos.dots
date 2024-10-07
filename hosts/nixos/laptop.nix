@@ -40,13 +40,12 @@
         CPU_MIN_PERF_ON_BAT = 0;
         CPU_MAX_PERF_ON_BAT = 20;
 
-        #Optional helps save long term battery health
-        #START_CHARGE_THRESH_BAT0 = 40; # 40 and bellow it starts to charge
-        #STOP_CHARGE_THRESH_BAT0 = 80; # 80 and above it stops charging
+        START_CHARGE_THRESH_BAT0 = 40; # 40 and bellow it starts to charge
+        STOP_CHARGE_THRESH_BAT0 = 80; # 80 and above it stops charging
       };
   };
 
-  # Better scheduling for CPU cycles - thanks System76!!!
+  # Better scheduling for CPU cycles - thanks System76
   services.system76-scheduler.settings.cfsProfiles.enable = true;
 
   # Enable powertop
@@ -61,7 +60,12 @@
   #   prime = {
   #     offload = {
   #       enable = true;
-  #       enableOffloadCmd = true;
+  #       enableOffloadCmd = true;boot.kernelParams = [ "mem_sleep_default=deep" ];
+
+  systemd.sleep.extraConfig = ''
+    HibernateDelaySec=30m
+    SuspendState=mem
+  '';
   #     };
   #     nvidiaBusId = "PCI:3:0:0";
   #     amdgpuBusId = "PCI:5:0:0";

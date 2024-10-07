@@ -46,7 +46,7 @@ in
         "QT_STYLE_OVERRIDE,kvantum"
         "WLR_NO_HARDWARE_CURSORS, 1"
       ];
-      monitor = [ "HDMI-A-1,preferred,0x0,1" "eDP-1,1920x1080@60,0x1080,1" ];
+      monitor = [ "HDMI-A-1,highrr,0x0,1" "eDP-1,1920x1080@60,0x1080,1" ];
       "exec-once" = [
         "ags"
         "swww kill; swww init"
