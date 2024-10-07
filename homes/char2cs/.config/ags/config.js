@@ -7,7 +7,7 @@ import * as Utils from 'resource:///com/github/Aylur/ags/utils.js'
 import { Bar, BarCornerTopleft, BarCornerTopright } from './widgets/bar/main.js';
 import Cheatsheet from './widgets/cheatsheet/main.js';
 // import DesktopBackground from './widgets/desktopbackground/main.js';
-// import Dock from './widgets/dock/main.js';
+import Dock from './widgets/dock/main.js';
 import Corner from './widgets/screencorners/main.js';
 import Indicator from './widgets/indicators/main.js';
 import Osk from './widgets/onscreenkeyboard/main.js';
@@ -35,7 +35,7 @@ applyStyle();
 
 const Windows = () => [
     // forMonitors(DesktopBackground),
-    // Dock(),
+    Dock(),
     Overview(),
     forMonitors(Indicator),
     Cheatsheet(),
