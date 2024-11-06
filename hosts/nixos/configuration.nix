@@ -59,6 +59,11 @@
         ];
       };
     };
+    openssh = {
+	enable = true;
+	ports = [ 22 ];
+    };
+    printing.enable = true;
   };
 
   systemd = {
