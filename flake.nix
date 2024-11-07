@@ -42,10 +42,6 @@
       url = "github:Kirottu/anyrun";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-	
-	cursor-arm = {
-		url = "github:coder/cursor-arm";
-    };
   };
 
   outputs = { self, impurity, ... }: {

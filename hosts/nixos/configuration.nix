@@ -2,6 +2,9 @@
   # nix
   documentation.nixos.enable = false; # .desktop
   nixpkgs.config.allowUnfree = true;
+  nixpkgs.config.allowBroken = true;
+  nixpkgs.config.allowAliases = true;
+  nixpkgs.config.allowUnsupportedSystem = true;
   nix.settings = {
     experimental-features = "nix-command flakes";
     auto-optimise-store = true;
